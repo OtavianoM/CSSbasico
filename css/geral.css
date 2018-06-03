@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700'); /* precisa estar conectado, 
+                                                                        é um import direto do site: fonts.googleapis*/
+
+body {
+    padding: 10px;
+    background-color: #ccc;
+    font-family: 'Oswald', sans-serif; /* vai buscar a primeira font e quando nao encontrar,
+                                         vai usar a segunda e assim por diante */
+    font-size: 16px; /* 10vh valor relativo ao tamanho da tela, poderia ser usado em font-size,
+                     vh é tamanho responsivo */
+    font-weight: 400;
+}
+
+.box {
+    background: #fff;
+    margin: 20px 60px 90px 120px; /*1- margin superior 2- margin esquerda  
+                                    3- margin de baixo  4- margin direita  margin externa*/
+    padding: 20px 60px 90px 120px; /* mesma logica da margin externa, porem o padding é a margin interna*/
+    border: 3px solid #000; /* borda */
+    border-radius: 10px;
+    position: relative;
+}
+
+#display * {
+    display: inline;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+}

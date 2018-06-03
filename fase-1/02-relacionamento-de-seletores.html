@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header { /*seletor de tag*/
+            background-color: red;
+        }
+        #footer { /*seletor de id*/
+            background-color: green;
+        }
+        .logomarca { /* seletor de class*/
+            background-color: blue;
+        }
+        #footer > .logomarca { /*exemplo de relacionamento de seletores. 
+            Esse mudara apenas a logomarca que esta dentro da tag footer*/
+            color: #ffffff;
+        }
+        header content #footer{ /*chamei 3 seletores, dois sendo tag e um id*/
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <div><a href="" class="logomarca">Logomarca</a></div>
+        </div>
+    </header>
+    <main id="content">
+        <section>
+            <h1 class="logomarca">Conteúdo</h1>
+            <p>Um texto qualquer</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <section>
+            <p class="logomarca">&copy; Todos os direitos reservados</p>
+        </section>
+        <a class="logomarca">&copy; Todos os direitos reservados</a>
+    </footer>
+</body>
+</html>

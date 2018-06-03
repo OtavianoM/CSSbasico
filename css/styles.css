@@ -1,0 +1,4 @@
+@import 'botoes.css'; /* é o mesmo conceito de oo, nesse caso ele pega as estilizações da pag botoes.css */
+@import 'geral.css'; 
+@import 'menu.css';
+@import 'form.css';

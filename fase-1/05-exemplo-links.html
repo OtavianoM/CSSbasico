@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body { /*o corpo do html ficou 10 px para a direita*/
+            padding: 10px;
+        }
+
+        .btn {  /*como todos os link iniciam com btn, 
+        entao essas configurações foram aplicadas a eles
+        BACKGOUD - fundo cinza claro, COLOR - cor cinza escuro.
+        PADDING - ALTURA 10PX, LARGURA 20PX 
+        */
+            text-decoration: none;
+            background-color: #ecf0f1;
+            color: #7f8c8d;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {  /* passando o mouse no item 4, o uncio com apenas btn, ele ficara com o fundo vermelho*/
+            background: red;
+        }
+
+        .btn.btn-red { /*o link com duas classes btn e btn-red tem fundo vermelho claro e cor branca*/
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .btn-red:hover { /* passando o mouse no link ele ficara com o fundo vemelhor um pouco escuro*/
+            background-color: #c0392b;
+        }
+
+        .btn.btn-blue { /*o link com duas classses,quanto mais especifico maior a prioridadde, tem fundo azul e cor branca*/
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .btn-blue:hover { /*passando o mouse ele ficara com o fundo azul um pouco escuro*/
+            background-color: #2980b9;
+        }
+
+        .btn.btn-green { /* o link abaixo tem o fundo azul claro e cor branca*/
+            background-color: #1abc9c; 
+            color: #fff;
+        }
+
+        .btn-green:hover { /*passando o mouse no link abaixo, ele ficara com o fundo azul claro*/
+            background-color: #16a085; 
+        }
+    </style>
+</head>
+<body>
+        <!-- a*4{item $}  
+        vai gerar 4 link(a href) com o texto 
+        "item" e em ordem numerica. Isso é boas praticas em html -->
+        <a href="" class="btn btn-red">item 1</a>
+        <a href="" class="btn btn-blue">item 2</a>
+        <a href="" class="btn btn-green">item 3</a>
+        <a href="" class="btn">item 4</a>
+</body>
+</html>

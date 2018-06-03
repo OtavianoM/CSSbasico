@@ -1,0 +1,27 @@
+nav, nav * { /* toda a tag nave ficara com essas qualificacoes  */
+    border: none;
+    color: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+nav ul li a { /* todos os link ficara assim, alt e larg, marg, backcolor, color, text decoration e text align  */
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-decoration: none;
+    text-align: center; /* centralizado */
+}
+
+nav ul li a:hover { /* passando o mouse */
+    background-color: rgba(0,0,0,0.7);
+    text-decoration: underline;
+    transition: all .5s ease;
+}
+
+nav.horizontal ul li { /* apenas nas undered list, com a class horizontal  */
+    display: inline-block;
+}
